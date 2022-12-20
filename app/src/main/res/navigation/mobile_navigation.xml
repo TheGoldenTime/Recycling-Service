@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_rewards">
+
+    <fragment
+        android:id="@+id/navigation_rewards"
+        android:name="com.example.fyp_mobile.ui.fragments.RewardsFragment"
+        android:label="Rewards"
+        tools:layout="@layout/fragment_rewards" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.fyp_mobile.ui.fragments.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_event"
+        android:name="com.example.fyp_mobile.ui.fragments.EventFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_event" />
+</navigation>

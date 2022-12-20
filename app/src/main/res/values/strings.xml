@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Recycling App</string>
+
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="register"><u>Register</u></string>
+    <string name="required">Required</string>
+    <string name="username">Username</string>
+    <string name="cfnpassword">Confrim Password</string>
+
+    <string name="title_complete_profile">COMPLETE PROFILE</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="read_storage_permission_denied">You just denied the permission for storage. You can also allow it from settings.</string>
+    <string name="image_selection_failed">Image selection Failed!</string>
+
+    <!--    <string name="title_activity_dashboard">DashboardActivity</string>-->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_settings">Setting</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+
+    <string name="underline_view"><u>Received</u></string>
+    <string name="underline_delete"><u>Delete</u></string>
+
+    <string name="underline_present"><u>Present</u></string>
+    <string name="underline_absent"><u>Absent</u></string>
+
+    <string name="underline_register"><u>Register</u></string>
+    <string name="underline_calculate"><u>Calculate</u></string>
+
+</resources>

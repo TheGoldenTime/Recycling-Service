@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@drawable/ic_home"
+        android:title="Rewards" />
+
+    <item
+        android:id="@+id/navigation_recycle"
+        android:icon="@drawable/leaf_logo"
+        android:title="Recycle" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart" />
+
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@drawable/ic_event"
+        android:title="Event" />
+
+<!--    <item android:id="@+id/navigation_donation"-->
+<!--        android:icon="@drawable/ic_heart"-->
+<!--        android:title="Donation" />-->
+
+    <item android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+
+</menu>

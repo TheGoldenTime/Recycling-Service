@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".ui.activities.RankingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/iv_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/auth_screens_background"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_settings_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/toolbar_title_paddingStart"
+                    android:paddingEnd="0dp"
+                    android:text="Monthly Rankings"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_prize1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_header_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="1st Place: 50000 points"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_prize2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prize1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="2nd Place: 30000 points"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_prize3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prize2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="3rd Place: 10000 points"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prize3"
+            android:layout_marginTop="@dimen/settings_name_marginTop"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="1) Marcus Loh"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_first_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_first"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:text="10000 points"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_first_point"
+            android:layout_marginTop="@dimen/settings_name_marginTop"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="2) Yuen"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_second_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_second"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:text="10000 points"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_second_point"
+            android:layout_marginTop="@dimen/settings_name_marginTop"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="3) Marcus Loh"/>
+
+        <com.example.fyp_mobile.utils.FYPTextViewBold
+            android:id="@+id/tv_third_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_third"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:text="10000 points"/>
+
+    </RelativeLayout>
+
+</ScrollView>

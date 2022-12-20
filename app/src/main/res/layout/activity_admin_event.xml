@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.AdminEventActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_eventsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnAddEvent"
+        android:layout_margin="5dp"
+        tools:listitem="@layout/card_view_admin_event"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/adminNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_admin_menu"
+        android:background="?android:attr/windowBackground"/>
+
+    <com.example.fyp_mobile.utils.FYPButton
+        android:id="@+id/btnAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adminNav"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/settings_button_marginStartEnd"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/settings_button_marginStartEnd"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="Create Event"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_textSize" />
+
+</RelativeLayout>

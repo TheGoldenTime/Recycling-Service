@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".ui.activities.AdminReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/adminNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_admin_menu"
+            android:background="?android:attr/windowBackground"/>
+
+        <FrameLayout
+            android:id="@+id/fl_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/iv_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/auth_screens_background"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_settings_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/toolbar_title_paddingStart"
+                    android:paddingEnd="0dp"
+                    android:text="Reports"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/material_collected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_header_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Materials Collected"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="none" />
+
+
+        <TextView
+            android:id="@+id/material_paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_collected"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Paper Collected : 100 g" />
+
+        <TextView
+            android:id="@+id/material_plastic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_paper"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Plastic Collected : 100 g" />
+
+        <TextView
+            android:id="@+id/material_aluminum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_plastic"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Aluminum Collected : 100 g" />
+
+        <TextView
+            android:id="@+id/material_metal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_aluminum"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Metal Collected : 100 g" />
+
+        <TextView
+            android:id="@+id/material_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_metal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Others Collected : 100 g" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/material_others"/>
+
+        <TextView
+            android:id="@+id/points_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material_others"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Points"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/points_spent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points_txt"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Points Spent : 200000" />
+
+        <TextView
+            android:id="@+id/points_grant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points_spent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Points Granted : 3000000" />
+
+        <TextView
+            android:id="@+id/points_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points_grant"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Points Donated : 100000" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_admin_navigation"
+    app:startDestination="@+id/navigation_admin_rewards">
+
+    <fragment
+        android:id="@+id/navigation_admin_rewards"
+        android:name="com.example.fyp_mobile.ui.fragments.AdminRewardsFragment"
+        android:label="Rewards"
+        tools:layout="@layout/fragment_admin_rewards" />
+
+    <fragment
+        android:id="@+id/navigation_admin_report"
+        android:name="com.example.fyp_mobile.ui.fragments.AdminReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_admin_report" />
+
+    <fragment
+        android:id="@+id/navigation_admin_event"
+        android:name="com.example.fyp_mobile.ui.fragments.AdminEventFragment"
+        android:label="Event"
+        tools:layout="@layout/fragment_admin_event" />
+</navigation>
